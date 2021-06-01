@@ -1,0 +1,208 @@
+@font-face {
+    font-family: iransans;
+    src: url(../font/IRANSansWeb.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: iransans;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tj {
+    text-align: justify;
+}
+
+.t-y {
+    color: #ffbf1d;
+}
+
+.bgc-y {
+    background-color: #ffbf1d;
+}
+
+.t-b {
+    color: #2a2e43;
+}
+
+.bgc-b {
+    background-color: #2a2e43;
+}
+
+.f-w {
+    font-weight: bolder;
+}
+
+.bor {
+    border-radius: 16px;
+}
+
+.bor2 {
+    border-radius: 75px;
+}
+
+.box {
+    box-shadow: 0 4px 10px 0 rgba(255, 191, 29, 0.25);
+}
+
+.bg-pic {
+    background-image: url(https://picsum.photos/1920/733);
+    height: 733px;
+    margin-bottom: 100px;
+}
+
+.bg-pic2 {
+    background-image: url(https://picsum.photos/1920/900);
+    height: 900px;
+}
+
+.bg-pic3 {
+    background-image: url(../images/mohit\ zist.png);
+    height: 1000px;
+    background-size: cover;
+}
+
+.bg-b {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 900px;
+}
+
+.bg-y {
+    background-color: #ffbf1d;
+    height: 850px;
+    width: 100vw;
+}
+
+.fs1 {
+    font-size: 72px;
+}
+
+.fs2 {
+    font-size: 200px;
+}
+
+.fs3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #353a50;
+}
+
+.fs4 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #353a50;
+    opacity: 0.5;
+}
+
+.fs5 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #353a50;
+}
+
+.fs6 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.hg {
+    height: 1000px;
+}
+
+.hg2 {
+    height: 400px;
+}
+
+.hg3 {
+    height: 500px;
+}
+
+.hg4 {
+    height: 700px;
+}
+
+.pat {
+    padding-top: 200px;
+}
+
+.rect {
+    border-radius: 12px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.rect2 {
+    color: #2a2e43;
+    border-radius: 8px;
+    background-color: rgba(42, 46, 67, 0.05);
+}
+
+.rect3 {
+    border-radius: 8px;
+    background-color: #48cfad;
+}
+
+.dot1 {
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    background-color: #2a2e43;
+}
+
+.dot2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    border: solid 1px #2a2e43;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+    .p1-m {
+        display: none;
+    }
+
+    button {
+        width: 280px;
+        height: 48px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .p1 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .p1 {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .p1 {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .p {
+        display: none;
+    }
+}
