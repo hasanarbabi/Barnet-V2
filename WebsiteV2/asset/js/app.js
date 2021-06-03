@@ -1,5 +1,4 @@
 
-
 $.ajax({
     type: "POST",
     dataType: 'json',
@@ -10,43 +9,40 @@ $.ajax({
         console.log(res);
         for (i = 0; i < res.length; i++) {
 
-            // let item ="";
+            let item ='';
+            item+='<div class="item rect p-2 my-2">';
+            item+='<div class="row">';
+            item+='<div class="col d-flex align-items-center">';
+            item+='<div class="mx-1 dot1"></div>';
+            item+='<div class="mx-2 fs3">' + res[i].source_location._shahr.shahrname + '</div>';
+            item+='<div class="fs4">' + res[i].source_location._ostan.provincename + '</div>';
+            item+='</div>';
+            item+='</div>';
+            item+='<div class="row">';
+            item+='<div class="col d-flex align-items-center py-1">';
+            item+='<div class="mx-1 dot2"></div>';
+            item+='<div class="mx-2 fs3">' + res[i].destination_location._shahr.shahrname + '</div>';
+            item+='<div class="fs4">' + res[i].destination_location._ostan.provincename + '</div>';
+            item+='</div>';
+            item+='</div>';
+            item+='<div class="row">';
+            item+='<div class="col">';
+            item+='<div class="fs5 rect2 d-flex align-items-center justify-content-center py-1">' + res[i].vehicle_requested_type.t_name + '</div>';
+            item+='</div>';
+            item+='</div>';
+            item+='<div class="row">';
+            item+='<div class="col">';
+            item+='<div class="fs5 d-flex align-items-center p-1">' + res[i].load_type.tname + '</div>';
+            item+='</div>';
+            item+='</div>';
+            item+='<div class="row">';
+            item+='<div class="col">';
+            item+='<div class="fs6 rect3 d-flex align-items-center justify-content-center py-1">' + res[i].status_persian + '</div>';
+            item+='</div>';
+            item+='</div>';
+            item+='</div>';
 
-
-            // item+="<div class='item rect p-2 my-2'>";
-            //                 item+="<div class='row'>
-            //                 item+="<div class='col d-flex align-items-center'>
-            //                 item+="<div class='mx-1 dot1'></div>
-            //                 item+=" <div class='mx-2 fs3'>شهر مبدا</div>
-            //                 item+=" <div class='fs4'>استان مبدا</div>
-            //                 item+="</div>
-            //                 item+="</div>
-            //                 item+=" <div class='row'>
-            //                 item+="<div class='col d-flex align-items-center py-1'>
-            //                 item+="   <div class='mx-1 dot2'></div>
-            //                 item+="  <div class='mx-2 fs3'>شهر مقصد</div>
-            //                 item+=" <div class='fs4'>استان مقصد</div>
-            //                 item+=" </div>
-            //                 item+="</div>
-            //                 item+=" <div class='row'>
-            //                 item+=" <div class='col'>
-            //                 item+="<div class='fs5 rect2 d-flex align-items-center justify-content-center py-1'>نوع خودرو درخواستی</div>
-            //                 item+=" </div>
-            //                 item+=" </div>
-            //                 item+="<div class='row'>
-            //                 item+="<div class='col'>
-            //                 item+=" <div class='fs5 d-flex align-items-center p-1'>نوع بار</div>
-            //                 item+="</div>
-            //                 item+=" </div>
-            //                 item+="<div class='row'>
-            //                 item+="<div class='col'>
-            //                 item+=" <div class='fs6 rect3 d-flex align-items-center justify-content-center py-1'>وضعیت</div>
-            //                 item+=" </div>
-            //                 item+=" </div>
-            //             </div>
-
-
-            $(".owl-carousel").append('<div class="item rect p-2 my-2"><div class="row"><div class="col d-flex align-items-center"><div class="mx-1 dot1"></div><div class="mx-2 fs3">' + res[i].source_location._shahr.shahrname + '</div><div class="fs4">' + res[i].source_location._ostan.provincename + '</div></div></div><div class="row"><div class="col d-flex align-items-center py-1"><div class="mx-1 dot2"></div><div class="mx-2 fs3">' + res[i].destination_location._shahr.shahrname + '</div><div class="fs4">' + res[i].destination_location._ostan.provincename + '</div></div></div><div class="row"><div class="col"><div class="fs5 rect2 d-flex align-items-center justify-content-center py-1">' + res[i].vehicle_requested_type.t_name + '</div></div></div><div class="row"><div class="col"><div class="fs5 d-flex align-items-center p-1">' + res[i].load_type.tname + '</div></div></div><div class="row"><div class="col"><div class="fs6 rect3 d-flex align-items-center justify-content-center py-1">' + res[i].status_persian + '</div></div></div></div>');
+            $(".owl-carousel").append(item);
 
             if (i == res.length - 1) {
                 $(document).ready(function () {
@@ -88,10 +84,6 @@ $.ajax({
             }
 
         };
-
-
-
-
     },
     error: function () {
         console.log("error");
