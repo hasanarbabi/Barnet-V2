@@ -144,9 +144,24 @@ a {
     background-color: rgba(42, 46, 67, 0.05);
 }
 
-.rect3 {
+.rects {
     border-radius: 8px;
     background-color: #48cfad;
+}
+
+.rectd {
+    border-radius: 8px;
+    background-color: #5D9CEC;
+}
+
+.rectf {
+    border-radius: 8px;
+    background-color: #ED5565;
+}
+
+.recti {
+    border-radius: 8px;
+    background-color: #F6A742;
 }
 
 .dot1 {
