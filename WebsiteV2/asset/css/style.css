@@ -178,7 +178,33 @@ a {
     border: solid 1px #2a2e43;
 }
 
+.anim {
+    animation-name: anim;
+    animation-duration: 1.25s;
+    animation-iteration-count: 10;
+}
 
+@keyframes anim {
+    0% {
+        fill: #2a2e43;
+        fill-opacity: 0.05;
+    }
+    
+    50% {
+        fill: orange;
+        fill-opacity: 1;
+    }
+
+    50% {
+        fill: #2a2e43;
+        fill-opacity: 0.05
+    }
+
+    50% {
+        fill: orange;
+        fill-opacity: 1;
+    }
+}
 
 
 

@@ -158,3 +158,33 @@ function toFarsiNumber(n) {
         .toString()
         .replace(/\d/g, x => farsiDigits[x]);
 }
+
+let isruning = false;
+
+function changeColor() {
+    index = Math.floor(Math.random() * 572);
+    $("#Group_1732").children().children().eq(index).addClass("anim");
+};
+
+
+function h(x) {
+    clearInterval(x);
+}
+
+let j;
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll > 2000 && scroll < 5000 && !isruning) {
+        console.log("trigerd");
+        j = setInterval(changeColor, 1250);
+        isruning = true;
+    }
+    if ((scroll > 5500 || scroll < 1800) && isruning) {
+        console.log("clear");
+        isruning = false;
+        h(j);
+    }
+
+});
