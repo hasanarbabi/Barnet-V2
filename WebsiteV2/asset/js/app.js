@@ -178,7 +178,7 @@ $(window).scroll(function (event) {
     console.log(scroll);
     if (scroll > 2000 && scroll < 5000 && !isruning) {
         console.log("trigerd");
-        j = setInterval(changeColor, 1250);
+        j = setInterval(changeColor, 750);
         isruning = true;
     }
     if ((scroll > 5500 || scroll < 1800) && isruning) {
