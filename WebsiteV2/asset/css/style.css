@@ -75,7 +75,7 @@ a {
 
 .bg-y {
     background-color: #ffbf1d;
-    height: 850px;
+    /* height: 850px; */
     width: 100vw;
 }
 
@@ -84,7 +84,7 @@ a {
 }
 
 .fs2 {
-    font-size: 200px;
+    font-size: 100px;
 }
 
 .fs3 {
@@ -178,6 +178,19 @@ a {
     border: solid 1px #2a2e43;
 }
 
+button {
+    width: 280px;
+    height: 48px;
+}
+
+.map {
+    margin: -100px auto;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
 .anim {
     animation-name: anim;
     animation-duration: 1s;
@@ -213,37 +226,23 @@ a {
 
 
 
-@media (min-width: 1200px) {
-    .p1-m {
-        display: none;
-    }
 
-    button {
-        width: 280px;
-        height: 48px;
-    }
+@media (min-width: 1200px) {
+    
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .p1 {
-        display: none;
-    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .p1 {
-        display: none;
-    }
+    
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .p1 {
-        display: none;
-    }
+    
 }
 
 @media (max-width: 575.98px) {
-    .p {
-        display: none;
-    }
+    
 }
