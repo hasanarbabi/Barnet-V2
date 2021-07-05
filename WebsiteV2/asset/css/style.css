@@ -66,6 +66,7 @@ a {
     background-image: url(../images/mohit\ zist.png);
     height: 1000px;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-b {
@@ -113,7 +114,7 @@ a {
 }
 
 .hg {
-    height: 1000px;
+    min-height: 1000px;
 }
 
 .hg2 {
@@ -126,6 +127,10 @@ a {
 
 .hg4 {
     height: 700px;
+}
+
+.hg5 {
+    height: 87px;
 }
 
 .pat {
@@ -178,14 +183,16 @@ a {
     border: solid 1px #2a2e43;
 }
 
+.owl-dots {
+    display: none;
+}
+
 button {
     width: 280px;
     height: 48px;
 }
 
-.map {
-    margin: -100px auto;
-}
+
 
 .accordion-button:focus {
     box-shadow: none;
@@ -228,11 +235,15 @@ button {
 
 
 @media (min-width: 1200px) {
-    
+    .map {
+        margin: -100px auto;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+    .map {
+        margin: -100px auto;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -244,5 +255,30 @@ button {
 }
 
 @media (max-width: 575.98px) {
-    
+    .bg-pic {
+        background: #ffffff;
+    }
+
+    .fs1 {
+        font-size: 36px;
+    }
+
+    .bor2 {
+        border-radius: 25px;
+    }
+
+    .hg {
+        min-height: 500px;
+    }
+
+    .hg5 {
+        height: 75px;
+    }
+
+    .bg-pic3 {
+        background-image: url(../images/aerialshot@3x.png);
+        height: 640px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
