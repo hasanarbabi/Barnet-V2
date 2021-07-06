@@ -113,6 +113,10 @@ a {
     color: #ffffff;
 }
 
+.wi {
+    width: 100%;
+}
+
 .hg {
     min-height: 1000px;
 }
@@ -134,7 +138,10 @@ a {
 }
 
 .pat {
-    padding-top: 200px;
+    height: 50px;
+    background-image: url(../images/Group\ 1137@3x.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
 }
 
 .rect {
@@ -280,5 +287,25 @@ button {
         height: 640px;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .fs-12 {
+        font-size: 12px;
+    }
+
+    .fs-14 {
+        font-size: 14px;
     }
 }
