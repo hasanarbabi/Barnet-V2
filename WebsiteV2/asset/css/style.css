@@ -308,4 +308,9 @@ button {
     .fs-14 {
         font-size: 14px;
     }
+
+    .wi {
+        width: 300px;
+        margin: 0 auto;
+    }
 }
