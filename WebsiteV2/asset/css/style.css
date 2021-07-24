@@ -137,13 +137,6 @@ a {
     height: 87px;
 }
 
-.pat {
-    height: 50px;
-    background-image: url(../images/Group\ 1137@3x.png);
-    background-size: 150%;
-    background-repeat: no-repeat;
-}
-
 .rect {
     border-radius: 12px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -205,6 +198,10 @@ button {
     box-shadow: none;
 }
 
+.accordion-button::after, .accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
 .anim {
     animation-name: anim;
     animation-duration: 1s;
@@ -264,6 +261,7 @@ button {
 @media (max-width: 575.98px) {
     .bg-pic {
         background: #ffffff;
+        height: auto;
     }
 
     .fs1 {
@@ -312,5 +310,9 @@ button {
     .wi {
         width: 300px;
         margin: 0 auto;
+    }
+
+    .pat {
+        display: none;
     }
 }
