@@ -248,14 +248,22 @@ button {
     .map {
         margin: -100px auto;
     }
+
+    .hg3 {
+        height: auto;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    
+    .hg3 {
+        height: auto;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    
+    .hg3 {
+        height: auto;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -314,5 +322,9 @@ button {
 
     .pat {
         display: none;
+    }
+
+    .hg3 {
+        height: auto;
     }
 }
